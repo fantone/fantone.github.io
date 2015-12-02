@@ -66,7 +66,7 @@
 <script type="text/javascript" id="hexo.configuration">
   var CONFIG = {
     scheme: 'Mist',
-    sidebar: 'post',
+    sidebar: 'hide',
     motion: true
   };
 </script>
@@ -87,6 +87,15 @@
 <![endif]-->
   
 
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-70923886-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 
 
@@ -123,7 +132,7 @@
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu menu-left">
       
         
         <li class="menu-item menu-item-home">
@@ -155,12 +164,43 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
 
       
       
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <form class="site-search-form">
+    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+  </form>
+
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'mnNn87xdXbyCsRww18Kz','2.0.0');
+</script>
+
+
+
+    </div>
   
 </nav>
 
@@ -228,6 +268,13 @@
           
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/12/01/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/01/hello-world/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -312,7 +359,7 @@
 
       <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="/images/default_avatar.jpg" alt="Tone Fan" itemprop="image"/>
+          <img class="site-author-image" src="/images/avatar.jpg" alt="Tone Fan" itemprop="image"/>
           <p class="site-author-name" itemprop="name">Tone Fan</p>
         </div>
         <p class="site-description motion-element" itemprop="description"></p>
@@ -343,6 +390,40 @@
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/fantone" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> github
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/fantone103" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> twitter
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/2121010932" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/tone-fantone" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> zhihu
+                  
+                </a>
+              </span>
+            
           
         </div>
 
@@ -402,11 +483,28 @@
 
   
     
-    
 
   
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"fantone"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
 
 
+    
   
 
   
@@ -430,6 +528,29 @@
 
   
   
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+
+  
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
   
